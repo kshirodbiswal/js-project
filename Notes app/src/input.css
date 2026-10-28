@@ -1,0 +1,4 @@
+/* to run tailwind through cli- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch */
+@import "tailwindcss";
+
+

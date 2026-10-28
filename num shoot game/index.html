@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Target Game UI</title>
+  <style>
+    body {
+  background: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header-bar {
+  width: 100%;
+  background: #c33;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  font-size: 1.25em;
+  position: relative;
+}
+
+.header-item {
+  flex: 1;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.header-item.center {
+  text-align: center;
+}
+
+.header-item.right {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.dots-container {
+  /* background: #c0e5f9; */
+  width: 100%;
+  max-width: 60vw;
+  margin:  auto;
+  padding: 40px;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.dots-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.dot {
+  background: #d11f1f;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.style{
+  height: 80px;
+  width: 250px;
+display: flex;
+/* background-color:aqua; */
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 40%;
+left: 40%;
+font-size: 25px;
+text-align: center;
+gap: 10px;
+}
+.btn{
+  width: 80px;
+   background-color: aqua;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+  </style>
+</head>
+<body>
+  <!-- Header Bar -->
+  <div class="header-bar">
+    <div class="header-item">Timer: <span id="timer">20 </span> sec</div>
+    <div class="header-item center">Target: <span id="target">10</span></div>
+    <div class="header-item right">Score: <span id="score">0</span></div>
+  </div>
+  
+  <!-- Dots Section -->
+  <div class="dots-container">
+    <!-- 1st Row -->
+   
+      <!-- <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div> -->
+      
+   
+     
+  </div>
+   <script src="script.js"></script>
+</body>
+</html>

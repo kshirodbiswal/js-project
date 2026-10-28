@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pointing cursor</title>
+</head>
+<style>
+
+
+   .shadowCursor{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: red;
+    filter: blur(30px);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(-50%,-50%);
+   }
+    .smallCursor{
+        height: 15px;
+        width: 15px;
+        background-color: red;
+        border-radius: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transform: translate(-50%,-50%);
+    }
+</style>
+<body>
+    <div class="shadowCursor"></div>
+    <div class="smallCursor"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

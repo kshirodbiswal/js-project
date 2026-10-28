@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random password generation</title>
+    <link rel="stylesheet" href="src/output.css">
+<style>
+    *{
+        font-family: sans-serif;
+    }
+    body{
+        background:#002339;
+        color: #fff;
+    }
+    .inputarea{
+        margin-top: 30px;
+        padding: 10px;
+    }
+    button{
+        background-color: #047943;
+        padding: 16px 24px;
+        margin-top: 30px;
+        gap: 5px;
+    }
+</style>
+
+</head>
+<body class="">
+   <div class="p-50  ">
+   <h1 class="text-4xl ">Generate a <br> <span class=" text-green-600 border-b-3 mb-2">Random password</span></h1>
+
+   <div class="bg-white w-100 flex  items-center justify-between   rounded-md inputarea ">
+    <input type="text" id="passsword" placeholder="passsword" class="text-gray-900   border-0 outline-0 ">
+    <img src="copy.png" alt=""  width="30px" class="" >
+   </div>
+   <button  class="flex cursor-pointer "> <img src="generate.png" alt="" width="20px">Generate password</button>
+</div> 
+ <script>
+
+
+const length=12;
+
+const upperCase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const lowerCase="abcdefghijklmnopqrstuvwxyz";
+const number="0123456789";
+const symbol="@#$%^&*()_+~|}{][></-=";
+const allChars= upperCase+lowerCase+number+symbol;
+
+
+function randomPassword(dataSet) {
+    return dataSet[Math.floor(Math.random()*dataSet.length)]
+}
+
+ </script>
+
+</body>
+</html>
+
